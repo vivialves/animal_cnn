@@ -6,29 +6,45 @@ The dataset used for this project is a well-known subset of animal classificatio
 
 Total Images: ~28,000
 Number of Categories: 10
+
 🐶 Dog
+
 🐱 Cat
+
 🐴 Horse
+
 🕷️ Spider
+
 🦋 Butterfly
+
 🐔 Chicken
+
 🐑 Sheep
+
 🐄 Cow
+
 🐿️ Squirrel
+
 🐘 Elephant
 
 Image Count per Category: Varies between 1.4K to 5K images.
+
 Directory Structure: Each category has its own folder in the dataset's main directory.
 
 ## 🧠 **Model Architectures**
 This repository includes training and evaluation of multiple neural network architectures for animal classification, such as:
 
 AlexNet
+
 ShuffleNet
+
+Efficient
+
 More architectures to come!
+
 Each model has been evaluated based on accuracy, loss, and other key metrics, with visualized results for better insights.
 
-📊 Results
+## 📊 **Results**
 We track training and validation performance for each model over multiple epochs. Metrics include:
 
 Accuracy
@@ -37,30 +53,29 @@ Precision, Recall, F1 Score
 Confusion Matrix
 Graphs of loss and accuracy are available in the /results folder for every architecture.
 
-🚀 How to Get Started
-1️⃣ Clone the Repository
-bash
-Copy code
+## 🚀 **How to Get Started**
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/yourusername/animal-classification.git
 cd animal-classification
-2️⃣ Install Dependencies
+```
+### 2️⃣ Install Dependencies
 Create a virtual environment and install the required Python packages:
-
-bash
-Copy code
+```bash
 pip install -r requirements.txt
-3️⃣ Download the Dataset
+```
+### 3️⃣ Download the Dataset
 The dataset is not included in this repository. You can download it from Dataset Link.
 Ensure the dataset is organized as described in the dataset structure section.
-4️⃣ Train the Model
+### 4️⃣ Train the Model
 Run the training script for your chosen model:
+```bash
+notebook alexnet.ipynb
+notebook alexnet-tf.ipynb --> Transfer learning
+```
 
-python train.py --model alexnet --epochs 50
-5️⃣ Evaluate the Model
-Evaluate performance on validation data:
-
-python evaluate.py --model alexnet
 ## 📁 **Directory Structure**
+```
 animal-classification/
 ├── data/
 │   ├── dog/
@@ -76,20 +91,28 @@ animal-classification/
 ├── evaluate.py
 ├── requirements.txt
 └── README.md
+```
+
 ## 🛠️ **Features**
 Preprocessing: Image augmentation techniques such as rotation, flipping, and scaling.
 Custom Training Loop: PyTorch-based implementation of forward pass, backpropagation, and optimization.
 Metrics Tracking: Training and validation loss/accuracy graphs, confusion matrix, and classification reports.
 Multi-Model Support: Easily switch between different architectures for experimentation.
+
+---
+
 ## 🔍 **Future Work**
 Add additional architectures (e.g., ResNet, DenseNet).
 Fine-tune hyperparameters for improved accuracy.
 Deploy the model with a web interface using Streamlit or Flask.
 Experiment with transfer learning for faster convergence.
 
+---
+
 ## 🤝 **Contributing**
 Contributions are welcome! If you have ideas for improvement or want to fix a bug, feel free to submit a pull request or open an issue.
 
+---
 
 ## 📜 **License**
 This project is licensed under the [GPL License](LICENSE).
