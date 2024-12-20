@@ -65,8 +65,9 @@ Create a virtual environment and install the required Python packages:
 pip install -r requirements.txt
 ```
 ### 3️⃣ Download the Dataset
-The dataset is not included in this repository. You can download it from Dataset Link.
+The dataset is not included in this repository. You can download it from Dataset Link: https://www.kaggle.com/datasets/rajatdulal/animal10
 Ensure the dataset is organized as described in the dataset structure section.
+
 ### 4️⃣ Train the Model
 Run the training script for your chosen model:
 ```bash
