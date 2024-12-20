@@ -47,11 +47,22 @@ Each model has been evaluated based on accuracy, loss, and other key metrics, wi
 ## 📊 **Results**
 We track training and validation performance for each model over multiple epochs. Metrics include:
 
-Accuracy
-Loss
-Precision, Recall, F1 Score
-Confusion Matrix
-Graphs of loss and accuracy are available in the /results folder for every architecture.
+- Accuracy
+- Loss
+- Precision, Recall, F1 Score
+- Confusion Matrix
+- Graphs of loss and accuracy are available in notebooks
+
+### Training Metrics:
+| Model           | Accuracy (Train) | Accuracy (Validation)  | Transfer Learning  |
+|-----------------|------------------|------------------------|--------------------|
+| AlexNet         | 57.71%           | 55.10%                 |                    |
+| AlexNet-tf      | 52.87%           | 50.02%                 |     ✅            |
+| ShuffleNet      | 77.84%           | 74.80%                 |                    |
+| ShuffleNet-tf   | 77.84%           | 74.80%                 |     ✅            |
+| EfficientNet    | 73.11%           | 73.35%                 |                    |
+| EfficientNet-tf | 73.11%           | 73.35%                 |     ✅             |
+
 
 ## 🚀 **How to Get Started**
 ### 1️⃣ Clone the Repository
@@ -69,11 +80,24 @@ The dataset is not included in this repository. You can download it from Dataset
 
 Ensure the dataset is organized as described in the dataset structure section.
 
-### 4️⃣ Train the Model
+### 4️⃣ Data Analysis
+Run the training script for your chosen model:
+```bash
+notebook data_analysis.ipynb
+```
+### 5️⃣ Train the Model
 Run the training script for your chosen model:
 ```bash
 notebook alexnet.ipynb
 notebook alexnet-tf.ipynb --> Transfer learning
+```
+```bash
+notebook shufflenet.ipynb
+notebook shufflenet-tf.ipynb --> Transfer learning
+```
+```bash
+notebook efficientnet.ipynb
+notebook efficientnet-tf.ipynb --> Transfer learning
 ```
 
 ## 📁 **Directory Structure**
@@ -82,15 +106,18 @@ animal-classification/
 ├── data/
 │   ├── dog/
 │   ├── cat/
+│   ├── horse/
 │   ├── ...
 ├── models/
-│   ├── alexnet.py
+│   ├── alexnet.ipynb
+│   ├── alexnet-tf.ipynb
 │   ├── shufflenet.py
+│   ├── shufflenet-tf.py
+│   ├── efficientnet.py
+│   ├── efficientnet-tf.py
 ├── results/
 │   ├── alexnet_loss.png
 │   ├── shufflenet_accuracy.png
-├── train.py
-├── evaluate.py
 ├── requirements.txt
 └── README.md
 ```
