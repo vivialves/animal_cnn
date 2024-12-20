@@ -38,7 +38,7 @@ AlexNet
 
 ShuffleNet
 
-Efficient
+EfficientNet
 
 More architectures to come!
 
