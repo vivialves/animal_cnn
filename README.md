@@ -61,7 +61,7 @@ We track training and validation performance for each model over multiple epochs
 | ShuffleNet      | 77.84%           | 74.80%                 |                    |
 | ShuffleNet-tf   | 88.49%           | 84.35%                 |     ✅            |
 | EfficientNet    | 73.11%           | 73.35%                 |                    |
-| EfficientNet-tf | 73.11%           | 73.35%                 |     ✅             |
+| EfficientNet-tf | 89.18%           | 86.94%                 |     ✅             |
 
 
 ## 🚀 **How to Get Started**
