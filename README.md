@@ -96,18 +96,24 @@ animal-classification/
 ```
 
 ## 🛠️ **Features**
-Preprocessing: Image augmentation techniques such as rotation, flipping, and scaling.
-Custom Training Loop: PyTorch-based implementation of forward pass, backpropagation, and optimization.
-Metrics Tracking: Training and validation loss/accuracy graphs, confusion matrix, and classification reports.
-Multi-Model Support: Easily switch between different architectures for experimentation.
+- Preprocessing: Image augmentation techniques such as rotation, flipping, and scaling.
+- Custom Training Loop: PyTorch-based implementation of forward pass, backpropagation, and optimization.
+- Metrics Tracking: Training and validation loss/accuracy graphs, confusion matrix, and classification reports.
+- Multi-Model Support: Easily switch between different architectures for experimentation.
+
+---
+
+## 🔧 **Technologies Used**
+- **Python**: PyTorch, TorchMetrics
+- **Visualization**: Matplotlib, Seaborn, ScikitLearn, 
 
 ---
 
 ## 🔍 **Future Work**
-Add additional architectures (e.g., ResNet, DenseNet).
-Fine-tune hyperparameters for improved accuracy.
-Deploy the model with a web interface using Streamlit or Flask.
-Experiment with transfer learning for faster convergence.
+- Add additional architectures (e.g., ResNet, DenseNet).
+- Fine-tune hyperparameters for improved accuracy.
+- Deploy the model with a web interface using Streamlit or Flask.
+- Experiment with transfer learning for faster convergence.
 
 ---
 
@@ -124,7 +130,6 @@ This project is licensed under the [GPL License](LICENSE).
 ## 📧 **Contact**
 For questions or collaborations, feel free to reach out:
 - **Author**: Viviane
-- **Email**: your_email@example.com
 - **LinkedIn**: https://www.linkedin.com/in/vivialves-developer/
 
 ---
